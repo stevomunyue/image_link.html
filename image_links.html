@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media only screen and (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my webpage! Here, you'll find a collection of images and information on various topics.</p>
+            <a href="https://www.pexels.com/search/nature/"><img src="image 1.jpg" alt="Technology"></a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid-container">
+                <a href="https://www.pexels.com/photo/person-walking-between-green-forest-trees-15286/"><img src="image 4.jpg" alt="Nature 1"></a>
+                <a href=https://www.pexels.com/search/nature/"><img src="image 5.jpg" alt="Nature 2"></a>
+                <a href="https://www.pexels.com/search/nature/"><img src="image 4.jpg" alt="Nature 3"></a>
+                <
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="https://www.pexels.com/search/nature/"><img src="image 1.jpg" alt="Food 1">Food Item 1</a></li>
+                <li><a href="https://www.pexels.com/search/nature/"><img src="image 2.avif" alt="Food 2">Food Item 2</a></li>
+                <li><a href="https://www.pexels.com/search/nature/"><img src="image 3.avif" alt="Food 3">Food Item 3</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Webpage</p>
+    </footer>
+</body>
+</html>
